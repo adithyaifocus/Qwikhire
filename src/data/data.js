@@ -24,7 +24,8 @@ export const blogData = [
         title:'AI-Powered Mock Interviews: A Game Changer For Job Seekers',
         author:'Laura M. Labovich',
         client:client1,
-        date:'dec 23, 2024'
+        date:'dec 23, 2024',
+        link:"https://www.forbes.com/councils/forbescoachescouncil/2024/12/23/ai-powered-mock-interviews-a-game-changer-for-job-seekers/?utm_source=chatgpt.com"
     },
     {
         id:2,
@@ -32,7 +33,8 @@ export const blogData = [
         title:'These Are The 9 Key Benefits of Video Interviewing in 2025',
         author:'Phil Strazzulla',
         client:client2,
-        date:'Mar 6, 2025'
+        date:'Mar 6, 2025',
+        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
     },
     {
         id:3,
@@ -40,7 +42,8 @@ export const blogData = [
         title:'Research Operations vs Research Is Always Essay On MasAI Theme',
         author:'Tiffany Betancourt',
         client:client3,
-        date:'Dec 29, 2023'
+        date:'Dec 29, 2023',
+        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
     },
     {
         id:4,
@@ -48,7 +51,8 @@ export const blogData = [
         title:'Ensuring Your Data Security: Mas.ai is Now SOC 2 Type II Compliant',
         author:'Mari Harrington',
         client:client4,
-        date:'March 13, 2023'
+        date:'March 13, 2023',
+        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
     },
     {
         id:5,
@@ -56,7 +60,8 @@ export const blogData = [
         title:'9 Best AI Translation Software (That You’ll Actually Use for translation)',
         author:'Floyd Glasgow',
         client:client5,
-        date:'May 6, 2023'
+        date:'May 6, 2023',
+        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
     },
     {
         id:6,
@@ -64,7 +69,8 @@ export const blogData = [
         title:'How to choose the right qualitative',
         author:'Donna Schultz',
         client:client6,
-        date:'June 19, 2023'
+        date:'June 19, 2023',
+        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
     },
     {
         id:7,
@@ -72,7 +78,8 @@ export const blogData = [
         title:'Scientists speculate that ours might not be held',
         author:'Joshua Morris',
         client:client7,
-        date:'June 20, 2023'
+        date:'June 20, 2023',
+        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
     },
     {
         id:8,
@@ -80,7 +87,8 @@ export const blogData = [
         title:'The Multiverse is the collection of alternate universes',
         author:'Rosaria Vargas',
         client:client8,
-        date:'Aug 31, 2023'
+        date:'Aug 31, 2023',
+        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
     },
     {
         id:9,
@@ -88,6 +96,7 @@ export const blogData = [
         title:'That share a universal hierarchy a large variety of these',
         author:'Carl Williams',
         client:client1,
-        date:'Sep 1, 2023'
+        date:'Sep 1, 2023',
+        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
     },
 ]

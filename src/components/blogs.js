@@ -6,6 +6,8 @@ import { blogData } from "../data/data";
 import {FiClock, FiCalendar} from '../assets/icons/vander'
 
 export default function Blogs(){
+    let blogdata=blogData;
+    console.log(blogdata)
     return(
         <>
         <div className="container relative md:mt-24 mt-16">
@@ -16,10 +18,10 @@ export default function Blogs(){
                 </div>
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
-                    {blogData.slice(0,3).map((item,index) => {
+                    {blogdata.slice(0,3).map((item,index) => {
                         return(
                             <div className="relative bg-white dark:bg-slate-900 p-4 rounded-md shadow dark:shadow-gray-700" key={index}>
-                                <a href="https://www.forbes.com/councils/forbescoachescouncil/2024/12/23/ai-powered-mock-interviews-a-game-changer-for-job-seekers/?utm_source=chatgpt.com" target="_blank"><img src={item.image} className="h-43 w-full rounded-md shadow dark:shadow-gray-700 object-cover" alt=""/></a>
+                                <a href={item.link} target="_blank"><img src={item.image} className="h-43 w-full rounded-md shadow dark:shadow-gray-700 object-cover" alt=""/></a>
                                 <div className="pt-4">
                                     <div className="flex justify-between items-center">
                                         <div className="space-x-1">
