@@ -6,7 +6,7 @@ import AboutThree from "../components/aboutThree";
 import Switcher from "../components/switcher";
 import Footer from "../components/footer";
 
-import {FiFileText, FiVideo, FiPauseCircle, FiCamera, FiLayout,FiMessageCircle, FiHexagon} from '../assets/icons/vander'
+import {FiFileText, FiCodesandbox , FaHandshake, FaAddressCard, BsArrowRepeat,FaBuilding, FiHexagon} from '../assets/icons/vander'
 import NavLight from "../components/navlight";
 
 export default function Services(){
@@ -18,33 +18,33 @@ export default function Services(){
     const casesData = [
         {
             icon:FiFileText,
-            title:'Post & Stories',
-            desc:'The phrasal sequence of the is now so that many campaign and benefit'
+            title:'Technical Skills Assessment',
+            desc:'Tests a candidate’s job-specific abilities through automated evaluations.'
         },
         {
-            icon:FiVideo,
-            title:'Ai Videos',
-            desc:'The phrasal sequence of the is now so that many campaign and benefit'
+            icon:FiCodesandbox ,
+            title:'Aptitude and Logical Reasoning Evaluation',
+            desc:'Measures a candidate’s problem-solving and analytical thinking skills.'
         },
         {
-            icon:FiPauseCircle,
-            title:'Ai Audios',
-            desc:'The phrasal sequence of the is now so that many campaign and benefit'
+            icon:FaHandshake,
+            title:'Soft Skillss Analysi',
+            desc:'Evaluates a candidate’s communication, behavior, and interpersonal abilities.'
         },
         {
-            icon:FiCamera,
-            title:'Ai Photos',
-            desc:'The phrasal sequence of the is now so that many campaign and benefit'
+            icon:FaAddressCard,
+            title:'Role-Specific Interview Workflows',
+            desc:'Tailor questions and evaluations to match the requirements of each job role.'
         },
         {
-            icon:FiLayout,
-            title:'Blogs & News',
-            desc:'The phrasal sequence of the is now so that many campaign and benefit'
+            icon:BsArrowRepeat,
+            title:'Candidate Reuse & Rediscovery',
+            desc:'Identifies and re-engages past candidates for new relevant job openings.'
         },
         {
-            icon:FiMessageCircle,
-            title:'Ai Chatboat',
-            desc:'The phrasal sequence of the is now so that many campaign and benefit'
+            icon:FaBuilding,
+            title:'Company Culture Fit Estimation',
+            desc:'Company Culture Fit Estimation assesses how well a candiate’s values and behavior align with the organization’s culture.'
         },
     ]
     return(
@@ -59,7 +59,7 @@ export default function Services(){
                     </div>
 
                     <ul className="tracking-[0.5px] mb-0 inline-block mt-5">
-                        <li className="inline-block capitalize text-[15px] font-medium duration-500 ease-in-out text-white/50 hover:text-white"><Link to="/">Mortal.Ai</Link></li>
+                        <li className="inline-block capitalize text-[15px] font-medium duration-500 ease-in-out text-white/50 hover:text-white"><Link to="/">Qwikhire.ai</Link></li>
                         <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i className="mdi mdi-chevron-right"></i></li>
                         <li className="inline-block capitalize text-[15px] font-medium duration-500 ease-in-out text-white" aria-current="page">Cases</li>
                     </ul>
@@ -98,9 +98,9 @@ export default function Services(){
                                 <div className="content mt-6">
                                     <Link to="" className="font-semibold text-xl hover:text-amber-400">{item.title}</Link>
                                     <p className="text-slate-400 mt-3">{item.desc}</p>
-                                    <div className="mt-4">
+                                    {/* <div className="mt-4">
                                         <Link to="" className="hover:text-amber-400 font-medium duration-500">Read More <i className="mdi mdi-arrow-right align-middle"></i></Link>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         )

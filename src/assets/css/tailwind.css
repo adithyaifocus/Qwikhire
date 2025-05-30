@@ -3030,8 +3030,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-360px * 6));
-            transform: translateX(calc(-360px * 6));
+    -webkit-transform: translateX(calc(-360px * 6.5));
+            transform: translateX(calc(-360px * 6.5));
   }
 }
 @keyframes scroll {
@@ -3040,8 +3040,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-360px * 6));
-            transform: translateX(calc(-360px * 6));
+    -webkit-transform: translateX(calc(-360px * 6.5));
+            transform: translateX(calc(-360px * 6.5));
   }
 }
 .slider:after {
@@ -3049,9 +3049,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
           transform: rotateZ(360deg);
 }
 .slider .slide-track {
-  -webkit-animation: scroll 120s linear infinite;
-          animation: scroll 120s linear infinite;
-  width: calc(360px * 20);
+  -webkit-animation: scroll 60s linear infinite;
+          animation: scroll 60s linear infinite;
+  width: calc(360px * 15);
 }
 
 /*********************************/

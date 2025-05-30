@@ -1,7 +1,7 @@
 import blog1 from "../assets/images/blog/1.png"
 import blog2 from "../assets/images/blog/2.png"
-import blog3 from "../assets/images/blog/3.jpg"
-import blog4 from "../assets/images/blog/4.jpg"
+import blog3 from "../assets/images/blog/3.png"
+import blog4 from "../assets/images/blog/1.png"
 import blog5 from "../assets/images/blog/5.jpg"
 import blog6 from "../assets/images/blog/6.jpg"
 import blog7 from "../assets/images/blog/7.jpg"
@@ -39,20 +39,20 @@ export const blogData = [
     {
         id:3,
         image:blog3,
-        title:'Research Operations vs Research Is Always Essay On MasAI Theme',
-        author:'Tiffany Betancourt',
+        title:'Applicants’ perception of artificial intelligence in the recruitment process',
+        author:'Piotr Horodyski',
         client:client3,
-        date:'Dec 29, 2023',
-        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
+        date:'Aug 1, 2023',
+        link:"https://www.sciencedirect.com/science/article/pii/S2451958823000362"
     },
     {
         id:4,
         image:blog4,
-        title:'Ensuring Your Data Security: Mas.ai is Now SOC 2 Type II Compliant',
-        author:'Mari Harrington',
+        title:'The AI Recruitment Takeover: Redefining Hiring In The Digital Age',
+        author:'Keith Ferrazzi',
         client:client4,
-        date:'March 13, 2023',
-        link:"https://www.selectsoftwarereviews.com/blog/benefits-of-video-interviews-hr?utm_source=chatgpt.com"
+        date:'Mar 27, 2025',
+        link:"https://www.forbes.com/sites/keithferrazzi/2025/03/27/the-ai-recruitment-takeover-redefining-hiring-in-the-digital-age/"
     },
     {
         id:5,

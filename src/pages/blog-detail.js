@@ -31,7 +31,7 @@ export default function BlogDetails(){
                 <div className="md:flex justify-center">
                     <div className="lg:w-2/3 md:w-4/5">
                         <Link to="" className="bg-amber-400 text-white text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">AI</Link>
-                        <h5 className="md:text-4xl text-3xl font-bold md:tracking-normal tracking-normal md:leading-normal leading-normal mt-3">{data.title ? data.title : "What is Artificial Intelligence and How Does AI Work For Human"}</h5>
+                        <h5 className="md:text-4xl text-3xl font-bold md:tracking-normal tracking-normal md:leading-normal leading-normal mt-3">{data ? data.title : "What is Artificial Intelligence and How Does AI Work For Human"}</h5>
                         {/* <p className="text-slate-400 text-lg mt-3">Hello there! I am ChatGPT, a language model developed by OpenAI, based on the powerful GPT (Generative Pre-trained Transformer) architecture.</p> */}
 
                         <div className="flex items-center mt-5">
@@ -39,7 +39,7 @@ export default function BlogDetails(){
 
                             <div className="ms-2">
                                 {/* <h6><Link to="" className="font-medium hover:text-amber-400">{data?.author ? data?.author : "Calvin Carlo"}</Link><Link to="" className="ms-1 text-green-600 font-medium"><i className="mdi mdi-circle-medium"></i>Follow</Link></h6> */}
-                                <span className="text-slate-400 text-sm">{data.date ? data.date : "August 25, 2023"} <span><i className="mdi mdi-circle-medium"></i>6 min read</span></span>
+                                <span className="text-slate-400 text-sm">{data ? data.date : "August 25, 2023"} <span><i className="mdi mdi-circle-medium"></i>6 min read</span></span>
                             </div>
                         </div>
                     </div>

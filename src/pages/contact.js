@@ -1,6 +1,6 @@
-import React,{useEffect} from "react";
+import React,{useEffect, useState} from "react";
 import { Link } from "react-router-dom";
-
+import axios from 'axios'
 import contactImg from "../assets/images/contact.svg"
 
 import Navbar from "../components/navbar";
@@ -10,6 +10,31 @@ import Switcher from "../components/switcher";
 import {FiHexagon, FiPhone,FiMail, FiMapPin} from "../assets/icons/vander"
 
 export default function Contact(){
+    let [name,setName]=useState("");
+    let [email,setEmail]=useState("");
+    let [subject,setSubject]=useState("");
+    let [comments,setComments]=useState("");
+    let payload={name,email,subject,comments}
+
+    function submit(){
+        // e.preventDefault();
+        axios.post('http://localhost:5000/contact',payload)
+        .then((res)=>{
+            console.log(res);
+            
+        })
+        .then((err)=>{
+            console.log(err);
+        })
+    }
+    console.log(name);
+    console.log(email);
+    console.log(subject);
+    console.log(comments);
+    
+    
+    
+
     useEffect(() => {
         document.documentElement.setAttribute("dir", "ltr");
         document.documentElement.classList.add('dark');
@@ -37,30 +62,30 @@ export default function Contact(){
                             <div className="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700 p-6">
                                 <h3 className="mb-6 text-2xl leading-normal font-semibold">Get in touch !</h3>
 
-                                <form>
+                                <form  onSubmit={submit}>
                                     <p className="mb-0" id="error-msg"></p>
                                     <div id="simple-msg"></div>
                                     <div className="grid lg:grid-cols-12 lg:gap-6">
                                         <div className="lg:col-span-6 mb-5">
                                             <label htmlFor="name" className="font-semibold">Your Name:</label>
-                                            <input name="name" id="name" type="text" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Name :"/>
+                                            <input name="name" id="name" type="text" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Name :" value={name} onChange={(e)=>{setName(e.target.value)}}/>
                                         </div>
         
                                         <div className="lg:col-span-6 mb-5">
                                             <label htmlFor="email" className="font-semibold">Your Email:</label>
-                                            <input name="email" id="email" type="email" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Email :"/>
+                                            <input name="email" id="email" type="email" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Email :" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
                                         </div>
                                     </div>
     
                                     <div className="grid grid-cols-1">
                                         <div className="mb-5">
                                             <label htmlFor="subject" className="font-semibold">Your Question:</label>
-                                            <input name="subject" id="subject" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Subject :"/>
+                                            <input name="subject" id="subject" className="form-input w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2" placeholder="Subject :"value={subject} onChange={(e)=>{setSubject(e.target.value)}}/>
                                         </div>
     
                                         <div className="mb-5">
                                             <label htmlFor="comments" className="font-semibold">Your Comment:</label>
-                                            <textarea name="comments" id="comments" className="form-input w-full py-2 px-3 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2 h-40" placeholder="Message :"></textarea>
+                                            <textarea name="comments" id="comments" className="form-input w-full py-2 px-3 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-amber-400 dark:border-gray-800 dark:focus:border-amber-400 focus:ring-0 mt-2 h-40" placeholder="Message :" value={comments} onChange={(e)=>{setComments(e.target.value)}}></textarea>
                                         </div>
                                     </div>
                                     <button type="submit" id="submit" name="send" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-amber-400 hover:bg-amber-500 border-amber-400 hover:border-amber-500 text-white rounded-md">Send Message</button>
@@ -119,8 +144,10 @@ export default function Contact(){
 
                         <div className="content mt-7">
                             <h5 className="title h5 text-lg font-semibold">Location</h5>
-                            <p className="text-slate-400 mt-3">Third Floor, No. 13, <br/> 100 Foot Ring Road, JP Nagar 6th Phase</p>
-                            <p className="text-slate-400 mt-3">Bangalore, Karnataka</p>
+                            <div className="mt-5">
+                                <Link to="https://www.google.com/maps/place/iFocus+Systec/@12.9059626,77.5766244,17z/data=!4m6!3m5!1s0x3bae156c243fec4d:0x1a473f0d02155ee!8m2!3d12.9061495!4d77.5793659!16s%2Fg%2F1hm4tc8wh?entry=ttu&g_ep=EgoyMDI1MDUyNy4wIKXMDSoASAFQAw%3D%3D" className="hover:text-amber-400" target="_blank">Third Floor, No. 13<br/>100 Foot Ring Road, JP Nagar 6th Phase<br/> Bengaluru, Karnataka 560078</Link>
+                            </div>
+                            
                             
                             {/* <div className="mt-5">
                                 <Link to="#contact"

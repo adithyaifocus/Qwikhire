@@ -8,23 +8,23 @@ export default function Faq(){
     const accordionData = [
         {
             id:1,
-            title:'How does it generate responses?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:'How does the AI evaluate candidates?',
+            desc:'Our AI analyzes multiple data points such as voice clarity, confidence, grammar, coding accuracy, and response relevance using natural language processing and machine learning algorithms. It ensures a fair, consistent, and unbiased evaluation for every candidate.'
         },
         {
             id:2,
-            title:'Is AI copywriting more cost-effective than hiring human writers?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:' Can I customize interview rounds for different positions?',
+            desc:'Yes, our platform supports customizable interview flows. You can define general, role-specific, aptitude, and coding rounds based on the requirements of each position.'
         },
         {
             id:3,
-            title:'Can AI copywriting be customized to my brand and audience?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:'Is the AI interview secure and proctored?',
+            desc:'Absolutely. We offer advanced proctoring features including face detection, gaze tracking, and periodic screenshot capture to ensure the candidate’s presence and integrity during the interview.'
         },
         {
             id:4,
-            title:'What kind of support is available for AI copywriting tools?',
-            desc:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+            title:'How are the final scores and remarks generated?',
+            desc:'After each interview, the AI generates scores out of 100 based on the candidate’s performance across all rounds. It also provides remarks on fluency, clarity, grammar, and confidence, each rated out of 10, to help recruiters make informed decisions.'
         },
     ]
     return(
@@ -36,7 +36,7 @@ export default function Faq(){
 
                         <p className="text-slate-400 max-w-xl mx-auto mb-6">Artificial intelligence makes it fast easy to create content for your blog, social media, website, and more!</p>
 
-                        <Link to="" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-amber-400 border-gray-100 dark:border-gray-800 hover:border-amber-400 dark:hover:border-amber-400 text-slate-900 dark:text-white hover:text-white rounded-md">Contact Us</Link>
+                        <Link to="/contact" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-transparent hover:bg-amber-400 border-gray-100 dark:border-gray-800 hover:border-amber-400 dark:hover:border-amber-400 text-slate-900 dark:text-white hover:text-white rounded-md">Contact Us</Link>
                     </div>
 
                     <div className="lg:col-span-8 md:mt-0 mt-8">

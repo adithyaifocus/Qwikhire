@@ -47,7 +47,7 @@ export default function Blog(){
                     {blogData.map((item,index) => {
                         return(
                             <div className="relative bg-white dark:bg-slate-900 p-4 rounded-md shadow dark:shadow-gray-700" key={index}>
-                                <img src={item.image} className="rounded-md shadow dark:shadow-gray-700" alt=""/>
+                                <Link to={item.link} target="_blank"><img src={item.image} className="rounded-md shadow dark:shadow-gray-700 h-40 w-full" alt="" /></Link>
                                 <div className="pt-4">
                                     <div className="flex justify-between items-center">
                                         <div className="space-x-1">

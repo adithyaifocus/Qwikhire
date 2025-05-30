@@ -21,12 +21,12 @@ export default function Blogs(){
                     {blogdata.slice(0,3).map((item,index) => {
                         return(
                             <div className="relative bg-white dark:bg-slate-900 p-4 rounded-md shadow dark:shadow-gray-700" key={index}>
-                                <a href={item.link} target="_blank"><img src={item.image} className="h-43 w-full rounded-md shadow dark:shadow-gray-700 object-cover" alt=""/></a>
+                                <a href={item.link} target="_blank"><img src={item.image} className="h-40 w-full rounded-md shadow dark:shadow-gray-700 object-cover" alt=""/></a>
                                 <div className="pt-4">
                                     <div className="flex justify-between items-center">
                                         <div className="space-x-1">
                                             <Link to="" className="bg-amber-400/10 text-amber-500 dark:text-amber-400 text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">AI</Link>
-                                            <Link to="" className="bg-amber-400/10 text-amber-500 dark:text-amber-400 text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">Marketing</Link>
+                                            <Link to="" className="bg-amber-400/10 text-amber-500 dark:text-amber-400 text-[12px] font-semibold px-2.5 py-0.5 rounded h-5">Technology</Link>
                                         </div>
 
                                         <span className="flex items-center"><FiClock className="h-4 w-4"/><span className="ms-1 text-slate-400">5 min read</span></span>
